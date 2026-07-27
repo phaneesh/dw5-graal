@@ -1,0 +1,3540 @@
+{
+  "reflection": [
+    {
+      "type": "boolean[]"
+    },
+    {
+      "type": "byte[]"
+    },
+    {
+      "type": "ch.qos.logback.classic.BasicConfigurator",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "ch.qos.logback.classic.Logger"
+    },
+    {
+      "type": "ch.qos.logback.classic.spi.LogbackServiceProvider"
+    },
+    {
+      "type": "ch.qos.logback.classic.util.DefaultJoranConfigurator",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "char[]"
+    },
+    {
+      "type": "com.codahale.metrics.annotation.ResponseMeteredLevel"
+    },
+    {
+      "type": "com.codahale.metrics.jersey3.InstrumentedResourceMethodApplicationListener"
+    },
+    {
+      "type": "com.codahale.metrics.jmx.JmxReporter$JmxCounter"
+    },
+    {
+      "type": "com.codahale.metrics.jmx.JmxReporter$JmxCounterMBean"
+    },
+    {
+      "type": "com.codahale.metrics.jmx.JmxReporter$JmxGauge"
+    },
+    {
+      "type": "com.codahale.metrics.jmx.JmxReporter$JmxGaugeMBean"
+    },
+    {
+      "type": "com.codahale.metrics.jmx.JmxReporter$JmxMeter"
+    },
+    {
+      "type": "com.codahale.metrics.jmx.JmxReporter$JmxMeterMBean"
+    },
+    {
+      "type": "com.codahale.metrics.jmx.JmxReporter$JmxTimer"
+    },
+    {
+      "type": "com.codahale.metrics.jmx.JmxReporter$JmxTimerMBean"
+    },
+    {
+      "type": "com.example.ping.PingConfiguration",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "com.example.ping.PingResource",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": [
+            "com.example.ping.PingQueue"
+          ]
+        },
+        {
+          "name": "ping",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "com.example.ping.PingResponse",
+      "methods": [
+        {
+          "name": "pong",
+          "parameterTypes": []
+        },
+        {
+          "name": "serverTime",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "com.example.ping.TunedServerFactory",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        },
+        {
+          "name": "setVirtualThreadsMax",
+          "parameterTypes": [
+            "int"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "com.fasterxml.jackson.annotation.JsonIgnore"
+    },
+    {
+      "type": "com.fasterxml.jackson.annotation.JsonProperty"
+    },
+    {
+      "type": "com.fasterxml.jackson.annotation.JsonTypeInfo"
+    },
+    {
+      "type": "com.fasterxml.jackson.annotation.JsonTypeName"
+    },
+    {
+      "type": "com.fasterxml.jackson.annotation.JsonValue"
+    },
+    {
+      "type": "com.fasterxml.jackson.core.Versioned"
+    },
+    {
+      "type": "com.fasterxml.jackson.databind.annotation.JsonDeserialize"
+    },
+    {
+      "type": "com.fasterxml.jackson.databind.annotation.JsonSerialize"
+    },
+    {
+      "type": "com.fasterxml.jackson.databind.deser.BeanDeserializerModifier[]"
+    },
+    {
+      "type": "com.fasterxml.jackson.databind.deser.Deserializers[]"
+    },
+    {
+      "type": "com.fasterxml.jackson.databind.deser.KeyDeserializers[]"
+    },
+    {
+      "type": "com.fasterxml.jackson.databind.deser.ValueInstantiators[]"
+    },
+    {
+      "type": "com.fasterxml.jackson.databind.ext.Java7SupportImpl",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "com.fasterxml.jackson.databind.ser.BeanSerializerModifier[]"
+    },
+    {
+      "type": "com.fasterxml.jackson.databind.ser.Serializers[]"
+    },
+    {
+      "type": "com.fasterxml.jackson.databind.type.TypeModifier[]"
+    },
+    {
+      "type": "com.fasterxml.jackson.datatype.guava.GuavaModule"
+    },
+    {
+      "type": "com.fasterxml.jackson.datatype.jdk8.Jdk8Module"
+    },
+    {
+      "type": "com.fasterxml.jackson.datatype.jsr310.JavaTimeModule"
+    },
+    {
+      "type": "com.fasterxml.jackson.jakarta.rs.base.ProviderBase"
+    },
+    {
+      "type": "com.fasterxml.jackson.jakarta.rs.json.JacksonJsonProvider",
+      "fields": [
+        {
+          "name": "_providers"
+        }
+      ],
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "com.fasterxml.jackson.jakarta.rs.json.JacksonXmlBindJsonProvider"
+    },
+    {
+      "type": "com.fasterxml.jackson.module.blackbird.BlackbirdModule"
+    },
+    {
+      "type": "com.fasterxml.jackson.module.blackbird.deser.BBDeserializerModifier",
+      "methods": [
+        {
+          "name": "booleanTrampoline",
+          "parameterTypes": [
+            "com.fasterxml.jackson.module.blackbird.deser.BBDeserializerModifier$ObjBooleanBiFunction",
+            "java.lang.Object",
+            "boolean"
+          ]
+        },
+        {
+          "name": "intTrampoline",
+          "parameterTypes": [
+            "com.fasterxml.jackson.module.blackbird.deser.BBDeserializerModifier$ObjIntBiFunction",
+            "java.lang.Object",
+            "int"
+          ]
+        },
+        {
+          "name": "longTrampoline",
+          "parameterTypes": [
+            "com.fasterxml.jackson.module.blackbird.deser.BBDeserializerModifier$ObjLongBiFunction",
+            "java.lang.Object",
+            "long"
+          ]
+        },
+        {
+          "name": "trampoline",
+          "parameterTypes": [
+            "java.util.function.BiFunction",
+            "java.lang.Object",
+            "java.lang.Object"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "com.fasterxml.jackson.module.jakarta.xmlbind.JakartaXmlBindAnnotationModule"
+    },
+    {
+      "type": "com.fasterxml.jackson.module.paramnames.ParameterNamesModule"
+    },
+    {
+      "type": "com.sun.el.ExpressionFactoryImpl",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "com.sun.management.GarbageCollectorMXBean"
+    },
+    {
+      "type": "com.sun.management.GcInfo"
+    },
+    {
+      "type": "com.sun.management.HotSpotDiagnosticMXBean",
+      "methods": [
+        {
+          "name": "getVMOption",
+          "parameterTypes": [
+            "java.lang.String"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "com.sun.management.ThreadMXBean"
+    },
+    {
+      "type": "com.sun.management.UnixOperatingSystemMXBean"
+    },
+    {
+      "type": "com.sun.management.VMOption",
+      "methods": [
+        {
+          "name": "getName",
+          "parameterTypes": []
+        },
+        {
+          "name": "getOrigin",
+          "parameterTypes": []
+        },
+        {
+          "name": "getValue",
+          "parameterTypes": []
+        },
+        {
+          "name": "isWriteable",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "com.sun.management.VMOption$Origin",
+      "jniAccessible": true,
+      "fields": [
+        {
+          "name": "ATTACH_ON_DEMAND"
+        },
+        {
+          "name": "CONFIG_FILE"
+        },
+        {
+          "name": "DEFAULT"
+        },
+        {
+          "name": "ENVIRON_VAR"
+        },
+        {
+          "name": "ERGONOMIC"
+        },
+        {
+          "name": "MANAGEMENT"
+        },
+        {
+          "name": "OTHER"
+        },
+        {
+          "name": "VM_CREATION"
+        }
+      ]
+    },
+    {
+      "type": "com.sun.management.internal.DiagnosticCommandArgumentInfo",
+      "jniAccessible": true,
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": [
+            "java.lang.String",
+            "java.lang.String",
+            "java.lang.String",
+            "java.lang.String",
+            "boolean",
+            "boolean",
+            "boolean",
+            "int"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "com.sun.management.internal.DiagnosticCommandArgumentInfo[]"
+    },
+    {
+      "type": "com.sun.management.internal.DiagnosticCommandInfo",
+      "jniAccessible": true,
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": [
+            "java.lang.String",
+            "java.lang.String",
+            "java.lang.String",
+            "boolean",
+            "java.util.List"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "com.sun.management.internal.DiagnosticCommandInfo[]"
+    },
+    {
+      "type": "com.sun.management.internal.Flag",
+      "jniAccessible": true,
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": [
+            "java.lang.String",
+            "java.lang.Object",
+            "boolean",
+            "boolean",
+            "com.sun.management.VMOption$Origin"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "com.sun.management.internal.GarbageCollectorExtImpl"
+    },
+    {
+      "type": "com.sun.management.internal.HotSpotDiagnostic"
+    },
+    {
+      "type": "com.sun.management.internal.HotSpotThreadImpl"
+    },
+    {
+      "type": "com.sun.management.internal.OperatingSystemImpl"
+    },
+    {
+      "type": "com.sun.management.internal.VirtualThreadSchedulerImpls$VirtualThreadSchedulerImpl"
+    },
+    {
+      "type": "double[]"
+    },
+    {
+      "type": "float[]"
+    },
+    {
+      "type": "int[]"
+    },
+    {
+      "type": "io.dropwizard.core.Configuration",
+      "fields": [
+        {
+          "name": "admin"
+        },
+        {
+          "name": "health"
+        },
+        {
+          "name": "logging"
+        },
+        {
+          "name": "metrics"
+        },
+        {
+          "name": "server"
+        }
+      ],
+      "methods": [
+        {
+          "name": "getAdminFactory",
+          "parameterTypes": []
+        },
+        {
+          "name": "getHealthFactory",
+          "parameterTypes": []
+        },
+        {
+          "name": "getLoggingFactory",
+          "parameterTypes": []
+        },
+        {
+          "name": "getMetricsFactory",
+          "parameterTypes": []
+        },
+        {
+          "name": "getServerFactory",
+          "parameterTypes": []
+        },
+        {
+          "name": "setAdminFactory",
+          "parameterTypes": [
+            "io.dropwizard.core.setup.AdminFactory"
+          ]
+        },
+        {
+          "name": "setHealthFactory",
+          "parameterTypes": [
+            "io.dropwizard.health.HealthFactory"
+          ]
+        },
+        {
+          "name": "setLoggingFactory",
+          "parameterTypes": [
+            "io.dropwizard.logging.common.LoggingFactory"
+          ]
+        },
+        {
+          "name": "setMetricsFactory",
+          "parameterTypes": [
+            "io.dropwizard.metrics.common.MetricsFactory"
+          ]
+        },
+        {
+          "name": "setServerFactory",
+          "parameterTypes": [
+            "io.dropwizard.core.server.ServerFactory"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "io.dropwizard.core.server.AbstractServerFactory",
+      "fields": [
+        {
+          "name": "allowedMethods"
+        },
+        {
+          "name": "gzip"
+        },
+        {
+          "name": "idleThreadTimeout"
+        },
+        {
+          "name": "maxThreads"
+        },
+        {
+          "name": "minThreads"
+        },
+        {
+          "name": "nofileHardLimit"
+        },
+        {
+          "name": "nofileSoftLimit"
+        },
+        {
+          "name": "requestLog"
+        },
+        {
+          "name": "responseMeteredLevel"
+        }
+      ],
+      "methods": [
+        {
+          "name": "getAllowedMethods",
+          "parameterTypes": []
+        },
+        {
+          "name": "getDetailedJsonProcessingExceptionMapper",
+          "parameterTypes": []
+        },
+        {
+          "name": "getDumpAfterStart",
+          "parameterTypes": []
+        },
+        {
+          "name": "getDumpBeforeStop",
+          "parameterTypes": []
+        },
+        {
+          "name": "getEnableThreadNameFilter",
+          "parameterTypes": []
+        },
+        {
+          "name": "getGid",
+          "parameterTypes": []
+        },
+        {
+          "name": "getGroup",
+          "parameterTypes": []
+        },
+        {
+          "name": "getGzipFilterFactory",
+          "parameterTypes": []
+        },
+        {
+          "name": "getIdleThreadTimeout",
+          "parameterTypes": []
+        },
+        {
+          "name": "getJerseyRootPath",
+          "parameterTypes": []
+        },
+        {
+          "name": "getMaxThreads",
+          "parameterTypes": []
+        },
+        {
+          "name": "getMetricPrefix",
+          "parameterTypes": []
+        },
+        {
+          "name": "getMinThreads",
+          "parameterTypes": []
+        },
+        {
+          "name": "getNofileHardLimit",
+          "parameterTypes": []
+        },
+        {
+          "name": "getNofileSoftLimit",
+          "parameterTypes": []
+        },
+        {
+          "name": "getRegisterDefaultExceptionMappers",
+          "parameterTypes": []
+        },
+        {
+          "name": "getRequestLogFactory",
+          "parameterTypes": []
+        },
+        {
+          "name": "getResponseMeteredLevel",
+          "parameterTypes": []
+        },
+        {
+          "name": "getShutdownGracePeriod",
+          "parameterTypes": []
+        },
+        {
+          "name": "getStartsAsRoot",
+          "parameterTypes": []
+        },
+        {
+          "name": "getUid",
+          "parameterTypes": []
+        },
+        {
+          "name": "getUmask",
+          "parameterTypes": []
+        },
+        {
+          "name": "getUser",
+          "parameterTypes": []
+        },
+        {
+          "name": "isEnableVirtualThreads",
+          "parameterTypes": []
+        },
+        {
+          "name": "isThreadPoolSizedCorrectly",
+          "parameterTypes": []
+        },
+        {
+          "name": "setAllowedMethods",
+          "parameterTypes": [
+            "java.util.Set"
+          ]
+        },
+        {
+          "name": "setDetailedJsonProcessingExceptionMapper",
+          "parameterTypes": [
+            "java.lang.Boolean"
+          ]
+        },
+        {
+          "name": "setDumpAfterStart",
+          "parameterTypes": [
+            "boolean"
+          ]
+        },
+        {
+          "name": "setDumpBeforeStop",
+          "parameterTypes": [
+            "boolean"
+          ]
+        },
+        {
+          "name": "setEnableThreadNameFilter",
+          "parameterTypes": [
+            "boolean"
+          ]
+        },
+        {
+          "name": "setEnableVirtualThreads",
+          "parameterTypes": [
+            "boolean"
+          ]
+        },
+        {
+          "name": "setGid",
+          "parameterTypes": [
+            "java.lang.Integer"
+          ]
+        },
+        {
+          "name": "setGroup",
+          "parameterTypes": [
+            "java.lang.String"
+          ]
+        },
+        {
+          "name": "setGzipFilterFactory",
+          "parameterTypes": [
+            "io.dropwizard.jetty.GzipHandlerFactory"
+          ]
+        },
+        {
+          "name": "setIdleThreadTimeout",
+          "parameterTypes": [
+            "io.dropwizard.util.Duration"
+          ]
+        },
+        {
+          "name": "setJerseyRootPath",
+          "parameterTypes": [
+            "java.lang.String"
+          ]
+        },
+        {
+          "name": "setMaxThreads",
+          "parameterTypes": [
+            "int"
+          ]
+        },
+        {
+          "name": "setMinThreads",
+          "parameterTypes": [
+            "int"
+          ]
+        },
+        {
+          "name": "setNofileHardLimit",
+          "parameterTypes": [
+            "java.lang.Integer"
+          ]
+        },
+        {
+          "name": "setNofileSoftLimit",
+          "parameterTypes": [
+            "java.lang.Integer"
+          ]
+        },
+        {
+          "name": "setRegisterDefaultExceptionMappers",
+          "parameterTypes": [
+            "java.lang.Boolean"
+          ]
+        },
+        {
+          "name": "setRequestLogFactory",
+          "parameterTypes": [
+            "io.dropwizard.request.logging.RequestLogFactory"
+          ]
+        },
+        {
+          "name": "setShutdownGracePeriod",
+          "parameterTypes": [
+            "io.dropwizard.util.Duration"
+          ]
+        },
+        {
+          "name": "setStartsAsRoot",
+          "parameterTypes": [
+            "java.lang.Boolean"
+          ]
+        },
+        {
+          "name": "setUid",
+          "parameterTypes": [
+            "java.lang.Integer"
+          ]
+        },
+        {
+          "name": "setUmask",
+          "parameterTypes": [
+            "java.lang.String"
+          ]
+        },
+        {
+          "name": "setUser",
+          "parameterTypes": [
+            "java.lang.String"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "io.dropwizard.core.server.DefaultServerFactory",
+      "fields": [
+        {
+          "name": "adminConnectors"
+        },
+        {
+          "name": "adminContextPath"
+        },
+        {
+          "name": "adminMaxThreads"
+        },
+        {
+          "name": "adminMinThreads"
+        },
+        {
+          "name": "applicationConnectors"
+        },
+        {
+          "name": "applicationContextPath"
+        }
+      ],
+      "methods": [
+        {
+          "name": "getAdminConnectors",
+          "parameterTypes": []
+        },
+        {
+          "name": "getAdminContextPath",
+          "parameterTypes": []
+        },
+        {
+          "name": "getAdminMaxThreads",
+          "parameterTypes": []
+        },
+        {
+          "name": "getAdminMinThreads",
+          "parameterTypes": []
+        },
+        {
+          "name": "getApplicationConnectors",
+          "parameterTypes": []
+        },
+        {
+          "name": "getApplicationContextPath",
+          "parameterTypes": []
+        },
+        {
+          "name": "isEnableAdminVirtualThreads",
+          "parameterTypes": []
+        },
+        {
+          "name": "setAdminConnectors",
+          "parameterTypes": [
+            "java.util.List"
+          ]
+        },
+        {
+          "name": "setAdminContextPath",
+          "parameterTypes": [
+            "java.lang.String"
+          ]
+        },
+        {
+          "name": "setAdminMaxThreads",
+          "parameterTypes": [
+            "int"
+          ]
+        },
+        {
+          "name": "setAdminMinThreads",
+          "parameterTypes": [
+            "int"
+          ]
+        },
+        {
+          "name": "setApplicationConnectors",
+          "parameterTypes": [
+            "java.util.List"
+          ]
+        },
+        {
+          "name": "setApplicationContextPath",
+          "parameterTypes": [
+            "java.lang.String"
+          ]
+        },
+        {
+          "name": "setEnableAdminVirtualThreads",
+          "parameterTypes": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "io.dropwizard.core.server.ServerFactory"
+    },
+    {
+      "type": "io.dropwizard.core.server.SimpleServerFactory"
+    },
+    {
+      "type": "io.dropwizard.core.setup.AdminFactory",
+      "fields": [
+        {
+          "name": "healthChecks"
+        },
+        {
+          "name": "tasks"
+        }
+      ],
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        },
+        {
+          "name": "getHealthChecks",
+          "parameterTypes": []
+        },
+        {
+          "name": "getTasks",
+          "parameterTypes": []
+        },
+        {
+          "name": "setHealthChecks",
+          "parameterTypes": [
+            "io.dropwizard.core.setup.HealthCheckConfiguration"
+          ]
+        },
+        {
+          "name": "setTasks",
+          "parameterTypes": [
+            "io.dropwizard.servlets.tasks.TaskConfiguration"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "io.dropwizard.core.setup.ExceptionMapperBinder"
+    },
+    {
+      "type": "io.dropwizard.core.setup.HealthCheckConfiguration",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        },
+        {
+          "name": "getMaxThreads",
+          "parameterTypes": []
+        },
+        {
+          "name": "getMinThreads",
+          "parameterTypes": []
+        },
+        {
+          "name": "getWorkQueueSize",
+          "parameterTypes": []
+        },
+        {
+          "name": "isServletEnabled",
+          "parameterTypes": []
+        },
+        {
+          "name": "setMaxThreads",
+          "parameterTypes": [
+            "int"
+          ]
+        },
+        {
+          "name": "setMinThreads",
+          "parameterTypes": [
+            "int"
+          ]
+        },
+        {
+          "name": "setServletEnabled",
+          "parameterTypes": [
+            "boolean"
+          ]
+        },
+        {
+          "name": "setWorkQueueSize",
+          "parameterTypes": [
+            "int"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "io.dropwizard.core.validation.InjectValidatorFeature",
+      "fields": [
+        {
+          "name": "resourceContext"
+        }
+      ]
+    },
+    {
+      "type": "io.dropwizard.health.DefaultHealthFactory"
+    },
+    {
+      "type": "io.dropwizard.health.HealthFactory"
+    },
+    {
+      "type": "io.dropwizard.health.response.HealthResponderFactory"
+    },
+    {
+      "type": "io.dropwizard.health.response.HealthResponseProviderFactory"
+    },
+    {
+      "type": "io.dropwizard.health.response.JsonHealthResponseProviderFactory"
+    },
+    {
+      "type": "io.dropwizard.health.response.ServletHealthResponderFactory"
+    },
+    {
+      "type": "io.dropwizard.jackson.Discoverable"
+    },
+    {
+      "type": "io.dropwizard.jersey.DropwizardResourceConfig"
+    },
+    {
+      "type": "io.dropwizard.jersey.DropwizardResourceConfig$ComponentLoggingListener"
+    },
+    {
+      "type": "io.dropwizard.jersey.DropwizardResourceConfig$MetricRegistryBinder"
+    },
+    {
+      "type": "io.dropwizard.jersey.caching.CacheControlledResponseFeature",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "io.dropwizard.jersey.errors.EofExceptionWriterInterceptor",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": [
+            "com.codahale.metrics.MetricRegistry"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "io.dropwizard.jersey.filter.AllowedMethodsFilter",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "io.dropwizard.jersey.guava.OptionalMessageBodyWriter",
+      "fields": [
+        {
+          "name": "mbw"
+        }
+      ],
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "io.dropwizard.jersey.guava.OptionalParamBinder"
+    },
+    {
+      "type": "io.dropwizard.jersey.jackson.JacksonFeature"
+    },
+    {
+      "type": "io.dropwizard.jersey.jackson.JacksonMessageBodyProvider"
+    },
+    {
+      "type": "io.dropwizard.jersey.optional.OptionalDoubleMessageBodyWriter",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "io.dropwizard.jersey.optional.OptionalIntMessageBodyWriter",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "io.dropwizard.jersey.optional.OptionalLongMessageBodyWriter",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "io.dropwizard.jersey.optional.OptionalMessageBodyWriter",
+      "fields": [
+        {
+          "name": "mbw"
+        }
+      ],
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "io.dropwizard.jersey.params.AbstractParamConverterProvider"
+    },
+    {
+      "type": "io.dropwizard.jersey.sessions.SessionFactoryProvider",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": [
+            "jakarta.inject.Provider",
+            "org.glassfish.jersey.internal.inject.InjectionManager"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "io.dropwizard.jersey.sessions.SessionFactoryProvider$Binder"
+    },
+    {
+      "type": "io.dropwizard.jersey.validation.FuzzyEnumParamConverterProvider"
+    },
+    {
+      "type": "io.dropwizard.jersey.validation.HibernateValidationBinder"
+    },
+    {
+      "type": "io.dropwizard.jetty.ConnectorFactory"
+    },
+    {
+      "type": "io.dropwizard.jetty.GzipHandlerFactory",
+      "fields": [
+        {
+          "name": "bufferSize"
+        },
+        {
+          "name": "deflateCompressionLevel"
+        },
+        {
+          "name": "minimumEntitySize"
+        }
+      ],
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        },
+        {
+          "name": "getBufferSize",
+          "parameterTypes": []
+        },
+        {
+          "name": "getCompressedMimeTypes",
+          "parameterTypes": []
+        },
+        {
+          "name": "getDeflateCompressionLevel",
+          "parameterTypes": []
+        },
+        {
+          "name": "getExcludedMimeTypes",
+          "parameterTypes": []
+        },
+        {
+          "name": "getExcludedPaths",
+          "parameterTypes": []
+        },
+        {
+          "name": "getIncludedMethods",
+          "parameterTypes": []
+        },
+        {
+          "name": "getIncludedPaths",
+          "parameterTypes": []
+        },
+        {
+          "name": "getMinimumEntitySize",
+          "parameterTypes": []
+        },
+        {
+          "name": "isEnabled",
+          "parameterTypes": []
+        },
+        {
+          "name": "isSyncFlush",
+          "parameterTypes": []
+        },
+        {
+          "name": "setBufferSize",
+          "parameterTypes": [
+            "io.dropwizard.util.DataSize"
+          ]
+        },
+        {
+          "name": "setCompressedMimeTypes",
+          "parameterTypes": [
+            "java.util.Set"
+          ]
+        },
+        {
+          "name": "setDeflateCompressionLevel",
+          "parameterTypes": [
+            "int"
+          ]
+        },
+        {
+          "name": "setEnabled",
+          "parameterTypes": [
+            "boolean"
+          ]
+        },
+        {
+          "name": "setExcludedMimeTypes",
+          "parameterTypes": [
+            "java.util.Set"
+          ]
+        },
+        {
+          "name": "setExcludedPaths",
+          "parameterTypes": [
+            "java.util.Set"
+          ]
+        },
+        {
+          "name": "setIncludedMethods",
+          "parameterTypes": [
+            "java.util.Set"
+          ]
+        },
+        {
+          "name": "setIncludedPaths",
+          "parameterTypes": [
+            "java.util.Set"
+          ]
+        },
+        {
+          "name": "setMinimumEntitySize",
+          "parameterTypes": [
+            "io.dropwizard.util.DataSize"
+          ]
+        },
+        {
+          "name": "setSyncFlush",
+          "parameterTypes": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "io.dropwizard.jetty.HttpConnectorFactory",
+      "fields": [
+        {
+          "name": "acceptQueueSize"
+        },
+        {
+          "name": "acceptorThreads"
+        },
+        {
+          "name": "bufferPoolIncrement"
+        },
+        {
+          "name": "headerCacheSize"
+        },
+        {
+          "name": "idleTimeout"
+        },
+        {
+          "name": "inputBufferSize"
+        },
+        {
+          "name": "maxBufferPoolSize"
+        },
+        {
+          "name": "maxRequestHeaderSize"
+        },
+        {
+          "name": "maxResponseHeaderSize"
+        },
+        {
+          "name": "minBufferPoolSize"
+        },
+        {
+          "name": "minRequestDataPerSecond"
+        },
+        {
+          "name": "minResponseDataPerSecond"
+        },
+        {
+          "name": "outputBufferSize"
+        },
+        {
+          "name": "port"
+        },
+        {
+          "name": "selectorThreads"
+        }
+      ],
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        },
+        {
+          "name": "setAcceptQueueSize",
+          "parameterTypes": [
+            "java.lang.Integer"
+          ]
+        },
+        {
+          "name": "setAcceptorThreads",
+          "parameterTypes": [
+            "java.util.Optional"
+          ]
+        },
+        {
+          "name": "setBindHost",
+          "parameterTypes": [
+            "java.lang.String"
+          ]
+        },
+        {
+          "name": "setBufferPoolIncrement",
+          "parameterTypes": [
+            "io.dropwizard.util.DataSize"
+          ]
+        },
+        {
+          "name": "setHeaderCacheSize",
+          "parameterTypes": [
+            "io.dropwizard.util.DataSize"
+          ]
+        },
+        {
+          "name": "setIdleTimeout",
+          "parameterTypes": [
+            "io.dropwizard.util.Duration"
+          ]
+        },
+        {
+          "name": "setInheritChannel",
+          "parameterTypes": [
+            "boolean"
+          ]
+        },
+        {
+          "name": "setInputBufferSize",
+          "parameterTypes": [
+            "io.dropwizard.util.DataSize"
+          ]
+        },
+        {
+          "name": "setMaxBufferPoolSize",
+          "parameterTypes": [
+            "io.dropwizard.util.DataSize"
+          ]
+        },
+        {
+          "name": "setMaxRequestHeaderSize",
+          "parameterTypes": [
+            "io.dropwizard.util.DataSize"
+          ]
+        },
+        {
+          "name": "setMaxResponseHeaderSize",
+          "parameterTypes": [
+            "io.dropwizard.util.DataSize"
+          ]
+        },
+        {
+          "name": "setMinBufferPoolSize",
+          "parameterTypes": [
+            "io.dropwizard.util.DataSize"
+          ]
+        },
+        {
+          "name": "setMinRequestDataPerSecond",
+          "parameterTypes": [
+            "io.dropwizard.util.DataSize"
+          ]
+        },
+        {
+          "name": "setMinResponseDataPerSecond",
+          "parameterTypes": [
+            "io.dropwizard.util.DataSize"
+          ]
+        },
+        {
+          "name": "setOutputBufferSize",
+          "parameterTypes": [
+            "io.dropwizard.util.DataSize"
+          ]
+        },
+        {
+          "name": "setPort",
+          "parameterTypes": [
+            "int"
+          ]
+        },
+        {
+          "name": "setReuseAddress",
+          "parameterTypes": [
+            "boolean"
+          ]
+        },
+        {
+          "name": "setSelectorThreads",
+          "parameterTypes": [
+            "java.util.Optional"
+          ]
+        },
+        {
+          "name": "setUseDateHeader",
+          "parameterTypes": [
+            "boolean"
+          ]
+        },
+        {
+          "name": "setUseForwardedHeaders",
+          "parameterTypes": [
+            "boolean"
+          ]
+        },
+        {
+          "name": "setUseProxyProtocol",
+          "parameterTypes": [
+            "boolean"
+          ]
+        },
+        {
+          "name": "setUseServerHeader",
+          "parameterTypes": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "io.dropwizard.jetty.HttpConnectorFactory$CookieComplianceDeserializer",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "io.dropwizard.jetty.HttpConnectorFactory$HttpComplianceDeserializer",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "io.dropwizard.jetty.HttpConnectorFactory$UriComplianceDeserializer",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "io.dropwizard.jetty.HttpsConnectorFactory"
+    },
+    {
+      "type": "io.dropwizard.jetty.ZipExceptionHandlingServletFilter",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "io.dropwizard.logging.common.AbstractAppenderFactory",
+      "fields": [
+        {
+          "name": "layout"
+        },
+        {
+          "name": "messageRate"
+        },
+        {
+          "name": "queueSize"
+        },
+        {
+          "name": "threshold"
+        },
+        {
+          "name": "timeZone"
+        }
+      ],
+      "methods": [
+        {
+          "name": "setDiscardingThreshold",
+          "parameterTypes": [
+            "int"
+          ]
+        },
+        {
+          "name": "setFilterFactories",
+          "parameterTypes": [
+            "java.util.List"
+          ]
+        },
+        {
+          "name": "setIncludeCallerData",
+          "parameterTypes": [
+            "boolean"
+          ]
+        },
+        {
+          "name": "setLayout",
+          "parameterTypes": [
+            "io.dropwizard.logging.common.layout.DiscoverableLayoutFactory"
+          ]
+        },
+        {
+          "name": "setLogFormat",
+          "parameterTypes": [
+            "java.lang.String"
+          ]
+        },
+        {
+          "name": "setMessageRate",
+          "parameterTypes": [
+            "io.dropwizard.util.Duration"
+          ]
+        },
+        {
+          "name": "setNeverBlock",
+          "parameterTypes": [
+            "boolean"
+          ]
+        },
+        {
+          "name": "setQueueSize",
+          "parameterTypes": [
+            "int"
+          ]
+        },
+        {
+          "name": "setThreshold",
+          "parameterTypes": [
+            "java.lang.String"
+          ]
+        },
+        {
+          "name": "setTimeZone",
+          "parameterTypes": [
+            "java.lang.String"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "io.dropwizard.logging.common.AbstractOutputStreamAppenderFactory"
+    },
+    {
+      "type": "io.dropwizard.logging.common.AppenderFactory"
+    },
+    {
+      "type": "io.dropwizard.logging.common.ConsoleAppenderFactory",
+      "fields": [
+        {
+          "name": "target"
+        }
+      ],
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        },
+        {
+          "name": "setTarget",
+          "parameterTypes": [
+            "io.dropwizard.logging.common.ConsoleAppenderFactory$ConsoleStream"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "io.dropwizard.logging.common.ConsoleAppenderFactory$ConsoleStream"
+    },
+    {
+      "type": "io.dropwizard.logging.common.DefaultLoggingFactory",
+      "fields": [
+        {
+          "name": "appenders"
+        },
+        {
+          "name": "level"
+        },
+        {
+          "name": "loggers"
+        }
+      ],
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        },
+        {
+          "name": "getAppenders",
+          "parameterTypes": []
+        },
+        {
+          "name": "getLevel",
+          "parameterTypes": []
+        },
+        {
+          "name": "getLoggers",
+          "parameterTypes": []
+        },
+        {
+          "name": "setAppenders",
+          "parameterTypes": [
+            "java.util.List"
+          ]
+        },
+        {
+          "name": "setLevel",
+          "parameterTypes": [
+            "java.lang.String"
+          ]
+        },
+        {
+          "name": "setLoggers",
+          "parameterTypes": [
+            "java.util.Map"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "io.dropwizard.logging.common.ExternalLoggingFactory"
+    },
+    {
+      "type": "io.dropwizard.logging.common.FileAppenderFactory"
+    },
+    {
+      "type": "io.dropwizard.logging.common.LoggingFactory"
+    },
+    {
+      "type": "io.dropwizard.logging.common.SyslogAppenderFactory"
+    },
+    {
+      "type": "io.dropwizard.logging.common.TcpSocketAppenderFactory"
+    },
+    {
+      "type": "io.dropwizard.logging.common.TlsSocketAppenderFactory"
+    },
+    {
+      "type": "io.dropwizard.logging.common.UdpSocketAppenderFactory"
+    },
+    {
+      "type": "io.dropwizard.logging.common.filter.FilterFactory"
+    },
+    {
+      "type": "io.dropwizard.logging.common.layout.DiscoverableLayoutFactory"
+    },
+    {
+      "type": "io.dropwizard.metrics.common.ConsoleReporterFactory"
+    },
+    {
+      "type": "io.dropwizard.metrics.common.CsvReporterFactory"
+    },
+    {
+      "type": "io.dropwizard.metrics.common.MetricsFactory",
+      "fields": [
+        {
+          "name": "frequency"
+        },
+        {
+          "name": "reporters"
+        }
+      ],
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        },
+        {
+          "name": "getFrequency",
+          "parameterTypes": []
+        },
+        {
+          "name": "getReporters",
+          "parameterTypes": []
+        },
+        {
+          "name": "isReportOnStop",
+          "parameterTypes": []
+        },
+        {
+          "name": "setFrequency",
+          "parameterTypes": [
+            "io.dropwizard.util.Duration"
+          ]
+        },
+        {
+          "name": "setReportOnStop",
+          "parameterTypes": [
+            "boolean"
+          ]
+        },
+        {
+          "name": "setReporters",
+          "parameterTypes": [
+            "java.util.List"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "io.dropwizard.metrics.common.ReporterFactory",
+      "methods": [
+        {
+          "name": "getFrequency",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "io.dropwizard.metrics.common.Slf4jReporterFactory"
+    },
+    {
+      "type": "io.dropwizard.metrics.servlets.AdminServlet",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "io.dropwizard.request.logging.ExternalRequestLogFactory"
+    },
+    {
+      "type": "io.dropwizard.request.logging.LogbackAccessRequestLogFactory",
+      "methods": [
+        {
+          "name": "getAppenders",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "io.dropwizard.request.logging.RequestLogFactory"
+    },
+    {
+      "type": "io.dropwizard.request.logging.filter.UriFilterFactory"
+    },
+    {
+      "type": "io.dropwizard.request.logging.old.LogbackClassicRequestLogFactory"
+    },
+    {
+      "type": "io.dropwizard.servlets.ThreadNameFilter",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "io.dropwizard.servlets.tasks.GarbageCollectionTask"
+    },
+    {
+      "type": "io.dropwizard.servlets.tasks.LogConfigurationTask"
+    },
+    {
+      "type": "io.dropwizard.servlets.tasks.TaskConfiguration",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        },
+        {
+          "name": "isPrintStackTraceOnError",
+          "parameterTypes": []
+        },
+        {
+          "name": "setPrintStackTraceOnError",
+          "parameterTypes": [
+            "boolean"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "io.dropwizard.util.DataSize",
+      "methods": [
+        {
+          "name": "parse",
+          "parameterTypes": [
+            "java.lang.CharSequence"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "io.dropwizard.util.DataSizeUnit"
+    },
+    {
+      "type": "io.dropwizard.util.Duration",
+      "methods": [
+        {
+          "name": "parse",
+          "parameterTypes": [
+            "java.lang.String"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "io.dropwizard.validation.MaxDuration",
+      "methods": [
+        {
+          "name": "groups",
+          "parameterTypes": []
+        },
+        {
+          "name": "inclusive",
+          "parameterTypes": []
+        },
+        {
+          "name": "message",
+          "parameterTypes": []
+        },
+        {
+          "name": "payload",
+          "parameterTypes": []
+        },
+        {
+          "name": "unit",
+          "parameterTypes": []
+        },
+        {
+          "name": "value",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "io.dropwizard.validation.MaxDurationValidator",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "io.dropwizard.validation.MethodValidator",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "io.dropwizard.validation.MinDataSize",
+      "methods": [
+        {
+          "name": "groups",
+          "parameterTypes": []
+        },
+        {
+          "name": "message",
+          "parameterTypes": []
+        },
+        {
+          "name": "payload",
+          "parameterTypes": []
+        },
+        {
+          "name": "unit",
+          "parameterTypes": []
+        },
+        {
+          "name": "value",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "io.dropwizard.validation.MinDataSizeValidator",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "io.dropwizard.validation.MinDuration",
+      "methods": [
+        {
+          "name": "groups",
+          "parameterTypes": []
+        },
+        {
+          "name": "inclusive",
+          "parameterTypes": []
+        },
+        {
+          "name": "message",
+          "parameterTypes": []
+        },
+        {
+          "name": "payload",
+          "parameterTypes": []
+        },
+        {
+          "name": "unit",
+          "parameterTypes": []
+        },
+        {
+          "name": "value",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "io.dropwizard.validation.MinDurationValidator",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "io.dropwizard.validation.PortRange",
+      "methods": [
+        {
+          "name": "groups",
+          "parameterTypes": []
+        },
+        {
+          "name": "max",
+          "parameterTypes": []
+        },
+        {
+          "name": "message",
+          "parameterTypes": []
+        },
+        {
+          "name": "min",
+          "parameterTypes": []
+        },
+        {
+          "name": "payload",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "io.dropwizard.validation.PortRangeValidator",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "io.dropwizard.validation.ValidationMethod",
+      "methods": [
+        {
+          "name": "groups",
+          "parameterTypes": []
+        },
+        {
+          "name": "message",
+          "parameterTypes": []
+        },
+        {
+          "name": "payload",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "jakarta.activation.DataSource"
+    },
+    {
+      "type": "jakarta.inject.Inject"
+    },
+    {
+      "type": "jakarta.inject.Named",
+      "methods": [
+        {
+          "name": "value",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "jakarta.inject.Singleton"
+    },
+    {
+      "type": "jakarta.persistence.Persistence"
+    },
+    {
+      "type": "jakarta.validation.Valid"
+    },
+    {
+      "type": "jakarta.validation.constraints.Max",
+      "methods": [
+        {
+          "name": "groups",
+          "parameterTypes": []
+        },
+        {
+          "name": "message",
+          "parameterTypes": []
+        },
+        {
+          "name": "payload",
+          "parameterTypes": []
+        },
+        {
+          "name": "value",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "jakarta.validation.constraints.Min",
+      "methods": [
+        {
+          "name": "groups",
+          "parameterTypes": []
+        },
+        {
+          "name": "message",
+          "parameterTypes": []
+        },
+        {
+          "name": "payload",
+          "parameterTypes": []
+        },
+        {
+          "name": "value",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "jakarta.validation.constraints.NotEmpty",
+      "methods": [
+        {
+          "name": "groups",
+          "parameterTypes": []
+        },
+        {
+          "name": "message",
+          "parameterTypes": []
+        },
+        {
+          "name": "payload",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "jakarta.validation.constraints.NotNull",
+      "methods": [
+        {
+          "name": "groups",
+          "parameterTypes": []
+        },
+        {
+          "name": "message",
+          "parameterTypes": []
+        },
+        {
+          "name": "payload",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "jakarta.ws.rs.GET"
+    },
+    {
+      "type": "jakarta.ws.rs.Path"
+    },
+    {
+      "type": "jakarta.ws.rs.Produces"
+    },
+    {
+      "type": "jakarta.ws.rs.container.DynamicFeature"
+    },
+    {
+      "type": "jakarta.ws.rs.core.Application"
+    },
+    {
+      "type": "jakarta.ws.rs.core.Feature"
+    },
+    {
+      "type": "jakarta.ws.rs.ext.MessageBodyReader"
+    },
+    {
+      "type": "jakarta.ws.rs.ext.MessageBodyWriter"
+    },
+    {
+      "type": "jakarta.ws.rs.ext.ParamConverterProvider"
+    },
+    {
+      "type": "java.awt.image.RenderedImage"
+    },
+    {
+      "type": "java.io.Serializable"
+    },
+    {
+      "type": "java.lang.Boolean",
+      "jniAccessible": true,
+      "fields": [
+        {
+          "name": "TYPE"
+        }
+      ],
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": [
+            "boolean"
+          ]
+        },
+        {
+          "name": "getBoolean",
+          "parameterTypes": [
+            "java.lang.String"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "java.lang.Byte",
+      "fields": [
+        {
+          "name": "TYPE"
+        }
+      ]
+    },
+    {
+      "type": "java.lang.Character",
+      "fields": [
+        {
+          "name": "TYPE"
+        }
+      ]
+    },
+    {
+      "type": "java.lang.Class",
+      "methods": [
+        {
+          "name": "getModule",
+          "parameterTypes": []
+        },
+        {
+          "name": "getRecordComponents",
+          "parameterTypes": []
+        },
+        {
+          "name": "isRecord",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "java.lang.Class[]"
+    },
+    {
+      "type": "java.lang.Cloneable"
+    },
+    {
+      "type": "java.lang.Comparable"
+    },
+    {
+      "type": "java.lang.Deprecated"
+    },
+    {
+      "type": "java.lang.Double",
+      "fields": [
+        {
+          "name": "TYPE"
+        }
+      ]
+    },
+    {
+      "type": "java.lang.Enum"
+    },
+    {
+      "type": "java.lang.Float",
+      "fields": [
+        {
+          "name": "TYPE"
+        }
+      ]
+    },
+    {
+      "type": "java.lang.Integer",
+      "fields": [
+        {
+          "name": "TYPE"
+        }
+      ]
+    },
+    {
+      "type": "java.lang.Iterable"
+    },
+    {
+      "type": "java.lang.Long",
+      "fields": [
+        {
+          "name": "TYPE"
+        }
+      ]
+    },
+    {
+      "type": "java.lang.Module",
+      "methods": [
+        {
+          "name": "isNamed",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "java.lang.Object"
+    },
+    {
+      "type": "java.lang.Object[]"
+    },
+    {
+      "type": "java.lang.Record"
+    },
+    {
+      "type": "java.lang.SecurityManager",
+      "methods": [
+        {
+          "name": "checkPermission",
+          "parameterTypes": [
+            "java.security.Permission"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "java.lang.Short",
+      "fields": [
+        {
+          "name": "TYPE"
+        }
+      ]
+    },
+    {
+      "type": "java.lang.StackTraceElement"
+    },
+    {
+      "type": "java.lang.String"
+    },
+    {
+      "type": "java.lang.String[]"
+    },
+    {
+      "type": "java.lang.System",
+      "methods": [
+        {
+          "name": "getSecurityManager",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "java.lang.Thread",
+      "methods": [
+        {
+          "name": "ofVirtual",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "java.lang.Thread$Builder",
+      "methods": [
+        {
+          "name": "factory",
+          "parameterTypes": []
+        },
+        {
+          "name": "name",
+          "parameterTypes": [
+            "java.lang.String",
+            "long"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "java.lang.Void",
+      "fields": [
+        {
+          "name": "TYPE"
+        }
+      ]
+    },
+    {
+      "type": "java.lang.constant.Constable"
+    },
+    {
+      "type": "java.lang.invoke.MethodHandles",
+      "methods": [
+        {
+          "name": "privateLookupIn",
+          "parameterTypes": [
+            "java.lang.Class",
+            "java.lang.invoke.MethodHandles$Lookup"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "java.lang.invoke.MethodHandles$Lookup",
+      "methods": [
+        {
+          "name": "defineClass",
+          "parameterTypes": [
+            "byte[]"
+          ]
+        },
+        {
+          "name": "hasFullPrivilegeAccess",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "java.lang.management.BufferPoolMXBean"
+    },
+    {
+      "type": "java.lang.management.ClassLoadingMXBean"
+    },
+    {
+      "type": "java.lang.management.CompilationMXBean"
+    },
+    {
+      "type": "java.lang.management.LockInfo"
+    },
+    {
+      "type": "java.lang.management.MemoryMXBean"
+    },
+    {
+      "type": "java.lang.management.MemoryManagerMXBean"
+    },
+    {
+      "type": "java.lang.management.MemoryPoolMXBean"
+    },
+    {
+      "type": "java.lang.management.MemoryUsage"
+    },
+    {
+      "type": "java.lang.management.MonitorInfo"
+    },
+    {
+      "type": "java.lang.management.PlatformLoggingMXBean"
+    },
+    {
+      "type": "java.lang.management.RuntimeMXBean"
+    },
+    {
+      "type": "java.lang.management.ThreadInfo"
+    },
+    {
+      "type": "java.lang.reflect.RecordComponent",
+      "methods": [
+        {
+          "name": "getName",
+          "parameterTypes": []
+        },
+        {
+          "name": "getType",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "java.math.BigDecimal"
+    },
+    {
+      "type": "java.math.BigInteger"
+    },
+    {
+      "type": "java.security.AccessController",
+      "methods": [
+        {
+          "name": "doPrivileged",
+          "parameterTypes": [
+            "java.security.PrivilegedAction"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "java.sql.Date"
+    },
+    {
+      "type": "java.sql.Timestamp"
+    },
+    {
+      "type": "java.util.AbstractCollection"
+    },
+    {
+      "type": "java.util.AbstractList"
+    },
+    {
+      "type": "java.util.ArrayList"
+    },
+    {
+      "type": "java.util.Arrays",
+      "jniAccessible": true,
+      "methods": [
+        {
+          "name": "asList",
+          "parameterTypes": [
+            "java.lang.Object[]"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "java.util.Collection"
+    },
+    {
+      "type": "java.util.Collections$EmptyList"
+    },
+    {
+      "type": "java.util.Collections$UnmodifiableMap"
+    },
+    {
+      "type": "java.util.Collections$UnmodifiableSortedMap"
+    },
+    {
+      "type": "java.util.Date"
+    },
+    {
+      "type": "java.util.List"
+    },
+    {
+      "type": "java.util.Map"
+    },
+    {
+      "type": "java.util.RandomAccess"
+    },
+    {
+      "type": "java.util.SequencedCollection"
+    },
+    {
+      "type": "java.util.SequencedMap"
+    },
+    {
+      "type": "java.util.SortedMap"
+    },
+    {
+      "type": "java.util.concurrent.Executors",
+      "methods": [
+        {
+          "name": "newThreadPerTaskExecutor",
+          "parameterTypes": [
+            "java.util.concurrent.ThreadFactory"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "java.util.concurrent.TimeUnit"
+    },
+    {
+      "type": "javafx.beans.value.ObservableValue"
+    },
+    {
+      "type": "javax.management.MBeanOperationInfo"
+    },
+    {
+      "type": "javax.management.MBeanServerBuilder",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "javax.management.ObjectName"
+    },
+    {
+      "type": "javax.management.StandardEmitterMBean"
+    },
+    {
+      "type": "javax.management.openmbean.CompositeData"
+    },
+    {
+      "type": "javax.management.openmbean.CompositeData[]"
+    },
+    {
+      "type": "javax.management.openmbean.OpenMBeanOperationInfoSupport"
+    },
+    {
+      "type": "javax.management.openmbean.TabularData"
+    },
+    {
+      "type": "javax.money.MonetaryAmount"
+    },
+    {
+      "type": "javax.security.auth.Subject",
+      "methods": [
+        {
+          "name": "callAs",
+          "parameterTypes": [
+            "javax.security.auth.Subject",
+            "java.util.concurrent.Callable"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "javax.xml.transform.Source"
+    },
+    {
+      "type": "javax.xml.transform.dom.DOMSource"
+    },
+    {
+      "type": "javax.xml.transform.sax.SAXSource"
+    },
+    {
+      "type": "javax.xml.transform.stream.StreamSource"
+    },
+    {
+      "type": "jdk.management.VirtualThreadSchedulerMXBean"
+    },
+    {
+      "type": "jdk.management.jfr.ConfigurationInfo"
+    },
+    {
+      "type": "jdk.management.jfr.EventTypeInfo"
+    },
+    {
+      "type": "jdk.management.jfr.FlightRecorderMXBean"
+    },
+    {
+      "type": "jdk.management.jfr.FlightRecorderMXBeanImpl"
+    },
+    {
+      "type": "jdk.management.jfr.RecordingInfo"
+    },
+    {
+      "type": "jdk.management.jfr.SettingDescriptorInfo"
+    },
+    {
+      "type": "long[]"
+    },
+    {
+      "type": "org.apache.logging.log4j.Logger"
+    },
+    {
+      "type": "org.eclipse.jetty.http.Http10FieldPreEncoder"
+    },
+    {
+      "type": "org.eclipse.jetty.http.Http11FieldPreEncoder"
+    },
+    {
+      "type": "org.eclipse.jetty.util.TypeUtil",
+      "methods": [
+        {
+          "name": "getClassLoaderLocation",
+          "parameterTypes": [
+            "java.lang.Class"
+          ]
+        },
+        {
+          "name": "getCodeSourceLocation",
+          "parameterTypes": [
+            "java.lang.Class"
+          ]
+        },
+        {
+          "name": "getModuleLocation",
+          "parameterTypes": [
+            "java.lang.Class"
+          ]
+        },
+        {
+          "name": "getSystemClassLoaderLocation",
+          "parameterTypes": [
+            "java.lang.Class"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "org.eclipse.jetty.util.Utf8StringBuilder",
+      "methods": [
+        {
+          "name": "errorActionIgnore",
+          "parameterTypes": []
+        },
+        {
+          "name": "errorActionReplace",
+          "parameterTypes": []
+        },
+        {
+          "name": "errorActionReport",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "org.glassfish.hk2.internal.PerThreadContext"
+    },
+    {
+      "type": "org.glassfish.jersey.inject.hk2.ContextInjectionResolverImpl",
+      "fields": [
+        {
+          "name": "serviceLocator"
+        }
+      ],
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "org.glassfish.jersey.inject.hk2.Hk2InjectionManagerFactory",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "org.glassfish.jersey.inject.hk2.Hk2Registrables",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "org.glassfish.jersey.inject.hk2.Hk2RequestScope",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "org.glassfish.jersey.inject.hk2.InstanceSupplierFactoryBridge"
+    },
+    {
+      "type": "org.glassfish.jersey.inject.hk2.JerseyErrorService",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "org.glassfish.jersey.inject.hk2.RequestContext",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": [
+            "org.glassfish.jersey.process.internal.RequestScope"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "org.glassfish.jersey.internal.JaxrsProviders",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": [
+            "jakarta.inject.Provider",
+            "jakarta.inject.Provider",
+            "jakarta.inject.Provider"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "org.glassfish.jersey.internal.inject.AbstractBinder"
+    },
+    {
+      "type": "org.glassfish.jersey.internal.inject.Binder"
+    },
+    {
+      "type": "org.glassfish.jersey.internal.inject.Custom"
+    },
+    {
+      "type": "org.glassfish.jersey.logging.LoggingFeatureAutoDiscoverable",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "org.glassfish.jersey.message.internal.AbstractFormProvider"
+    },
+    {
+      "type": "org.glassfish.jersey.message.internal.AbstractMessageReaderWriterProvider"
+    },
+    {
+      "type": "org.glassfish.jersey.message.internal.BasicTypesMessageProvider",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "org.glassfish.jersey.message.internal.ByteArrayProvider",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "org.glassfish.jersey.message.internal.DataSourceProvider",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "org.glassfish.jersey.message.internal.EnumMessageProvider",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "org.glassfish.jersey.message.internal.FileProvider",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "org.glassfish.jersey.message.internal.FormMultivaluedMapProvider",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "org.glassfish.jersey.message.internal.FormProvider",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "org.glassfish.jersey.message.internal.InputStreamProvider",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "org.glassfish.jersey.message.internal.PathProvider",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "org.glassfish.jersey.message.internal.ReaderProvider",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "org.glassfish.jersey.message.internal.RenderedImageProvider",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "org.glassfish.jersey.message.internal.SourceProvider$DomSourceReader",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": [
+            "jakarta.inject.Provider"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "org.glassfish.jersey.message.internal.SourceProvider$SaxSourceReader",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": [
+            "jakarta.inject.Provider"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "org.glassfish.jersey.message.internal.SourceProvider$SourceWriter",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": [
+            "jakarta.inject.Provider",
+            "jakarta.inject.Provider"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "org.glassfish.jersey.message.internal.SourceProvider$StreamSourceReader",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "org.glassfish.jersey.message.internal.StreamingOutputProvider",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "org.glassfish.jersey.message.internal.StringMessageProvider",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "org.glassfish.jersey.process.Inflector"
+    },
+    {
+      "type": "org.glassfish.jersey.process.internal.RequestScope"
+    },
+    {
+      "type": "org.glassfish.jersey.server.BackgroundScheduler"
+    },
+    {
+      "type": "org.glassfish.jersey.server.ChunkedResponseWriter",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "org.glassfish.jersey.server.ManagedAsyncExecutor"
+    },
+    {
+      "type": "org.glassfish.jersey.server.ResourceConfig"
+    },
+    {
+      "type": "org.glassfish.jersey.server.ServerExecutorProvidersConfigurator$DefaultBackgroundSchedulerProvider"
+    },
+    {
+      "type": "org.glassfish.jersey.server.ServerExecutorProvidersConfigurator$DefaultManagedAsyncExecutorProvider"
+    },
+    {
+      "type": "org.glassfish.jersey.server.filter.internal.ServerFiltersAutoDiscoverable",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "org.glassfish.jersey.server.internal.JsonWithPaddingInterceptor",
+      "fields": [
+        {
+          "name": "containerRequestProvider"
+        }
+      ],
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "org.glassfish.jersey.server.internal.MappableExceptionWrapperInterceptor",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "org.glassfish.jersey.server.internal.RuntimeDelegateImpl"
+    },
+    {
+      "type": "org.glassfish.jersey.server.internal.inject.AbstractValueParamProvider"
+    },
+    {
+      "type": "org.glassfish.jersey.server.internal.inject.FormParamValueParamProvider$MultipartFormParamValueProvider$FormParamHolder"
+    },
+    {
+      "type": "org.glassfish.jersey.server.internal.monitoring.MonitoringAutodiscoverable",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "org.glassfish.jersey.server.internal.monitoring.MonitoringContainerListener",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "org.glassfish.jersey.server.internal.process.RequestProcessingContextReference",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "org.glassfish.jersey.server.model.ModelProcessor"
+    },
+    {
+      "type": "org.glassfish.jersey.server.model.Parameter$ServerParameterService",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "org.glassfish.jersey.server.monitoring.ApplicationEventListener"
+    },
+    {
+      "type": "org.glassfish.jersey.server.validation.ValidationFeature",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "org.glassfish.jersey.server.validation.internal.InjectingConstraintValidatorFactory",
+      "fields": [
+        {
+          "name": "resourceContext"
+        }
+      ],
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "org.glassfish.jersey.server.validation.internal.ValidationAutoDiscoverable",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "org.glassfish.jersey.server.validation.internal.ValidationBinder"
+    },
+    {
+      "type": "org.glassfish.jersey.server.validation.internal.ValidationErrorMessageBodyWriter",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "org.glassfish.jersey.server.wadl.WadlFeature",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "org.glassfish.jersey.server.wadl.internal.WadlAutoDiscoverable",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "org.glassfish.jersey.server.wadl.processor.OptionsMethodProcessor$GenericOptionsInflector"
+    },
+    {
+      "type": "org.glassfish.jersey.server.wadl.processor.OptionsMethodProcessor$PlainTextOptionsInflector"
+    },
+    {
+      "type": "org.glassfish.jersey.servlet.WebComponent$WebComponentBinder"
+    },
+    {
+      "type": "org.glassfish.jersey.servlet.async.AsyncContextDelegateProviderImpl",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "org.glassfish.jersey.servlet.init.FilterUrlMappingsProviderImpl"
+    },
+    {
+      "type": "org.glassfish.jersey.servlet.internal.spi.ServletContainerProvider[]"
+    },
+    {
+      "type": "org.glassfish.jersey.spi.AbstractThreadPoolProvider"
+    },
+    {
+      "type": "org.glassfish.jersey.spi.ScheduledThreadPoolExecutorProvider",
+      "methods": [
+        {
+          "name": "preDestroy",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "org.glassfish.jersey.spi.ThreadPoolExecutorProvider",
+      "methods": [
+        {
+          "name": "preDestroy",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "org.glassfish.jersey.spidiscovery.internal.MetaInfServicesAutoDiscoverable",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "org.glassfish.jersey.spidiscovery.internal.MetaInfServicesAutoDiscoverable$1"
+    },
+    {
+      "type": "org.hibernate.validator.HibernateValidator",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "org.hibernate.validator.internal.constraintvalidators.bv.NotNullValidator",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "org.hibernate.validator.internal.constraintvalidators.bv.notempty.NotEmptyValidatorForCharSequence",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "org.hibernate.validator.internal.constraintvalidators.bv.number.bound.MaxValidatorForInteger",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "org.hibernate.validator.internal.constraintvalidators.bv.number.bound.MinValidatorForInteger",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "org.hibernate.validator.internal.util.logging.Log_$logger",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": [
+            "org.jboss.logging.Logger"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "org.hibernate.validator.internal.util.logging.Log_$logger_en"
+    },
+    {
+      "type": "org.hibernate.validator.internal.util.logging.Log_$logger_en_IN"
+    },
+    {
+      "type": "org.hibernate.validator.internal.util.logging.Messages_$bundle",
+      "fields": [
+        {
+          "name": "INSTANCE"
+        }
+      ]
+    },
+    {
+      "type": "org.hibernate.validator.internal.util.logging.Messages_$bundle_en"
+    },
+    {
+      "type": "org.hibernate.validator.internal.util.logging.Messages_$bundle_en_IN"
+    },
+    {
+      "type": "org.jboss.logmanager.LogManager"
+    },
+    {
+      "type": "org.joda.time.ReadableInstant"
+    },
+    {
+      "type": "org.jvnet.hk2.external.generator.ServiceLocatorGeneratorImpl"
+    },
+    {
+      "type": "org.jvnet.hk2.internal.DynamicConfigurationServiceImpl",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": [
+            "org.glassfish.hk2.api.ServiceLocator"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "org.jvnet.hk2.internal.ServiceLocatorRuntimeImpl",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": [
+            "org.glassfish.hk2.api.ServiceLocator"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "org.osgi.framework.BundleReference"
+    },
+    {
+      "type": "org.slf4j.spi.LocationAwareLogger",
+      "methods": [
+        {
+          "name": "log",
+          "parameterTypes": [
+            "org.slf4j.Marker",
+            "java.lang.String",
+            "int",
+            "java.lang.String",
+            "java.lang.Object[]",
+            "java.lang.Throwable"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "short[]"
+    },
+    {
+      "type": "sun.management.ClassLoadingImpl"
+    },
+    {
+      "type": "sun.management.CompilationImpl"
+    },
+    {
+      "type": "sun.management.ManagementFactoryHelper$1"
+    },
+    {
+      "type": "sun.management.ManagementFactoryHelper$PlatformLoggingImpl"
+    },
+    {
+      "type": "sun.management.MemoryImpl"
+    },
+    {
+      "type": "sun.management.MemoryManagerImpl"
+    },
+    {
+      "type": "sun.management.MemoryPoolImpl"
+    },
+    {
+      "type": "sun.management.RuntimeImpl"
+    },
+    {
+      "type": "sun.management.VMManagementImpl",
+      "jniAccessible": true,
+      "fields": [
+        {
+          "name": "compTimeMonitoringSupport"
+        },
+        {
+          "name": "currentThreadCpuTimeSupport"
+        },
+        {
+          "name": "objectMonitorUsageSupport"
+        },
+        {
+          "name": "otherThreadCpuTimeSupport"
+        },
+        {
+          "name": "remoteDiagnosticCommandsSupport"
+        },
+        {
+          "name": "synchronizerUsageSupport"
+        },
+        {
+          "name": "threadAllocatedMemorySupport"
+        },
+        {
+          "name": "threadContentionMonitoringSupport"
+        }
+      ]
+    },
+    {
+      "type": "sun.reflect.misc.Trampoline",
+      "methods": [
+        {
+          "name": "invoke",
+          "parameterTypes": [
+            "java.lang.reflect.Method",
+            "java.lang.Object",
+            "java.lang.Object[]"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "sun.text.resources.FormatData"
+    },
+    {
+      "type": "sun.text.resources.FormatData_en"
+    },
+    {
+      "type": "sun.text.resources.JavaTimeSupplementary"
+    },
+    {
+      "type": "sun.text.resources.cldr.FormatData"
+    },
+    {
+      "type": "sun.text.resources.cldr.FormatData_en"
+    },
+    {
+      "type": "sun.text.resources.cldr.FormatData_en_US"
+    },
+    {
+      "type": "sun.util.resources.cldr.CalendarData"
+    }
+  ],
+  "resources": [
+    {
+      "glob": "META-INF/services/ch.qos.logback.classic.spi.Configurator"
+    },
+    {
+      "glob": "META-INF/services/com.fasterxml.jackson.databind.Module"
+    },
+    {
+      "glob": "META-INF/services/io.dropwizard.core.server.ServerFactory"
+    },
+    {
+      "glob": "META-INF/services/io.dropwizard.health.HealthFactory"
+    },
+    {
+      "glob": "META-INF/services/io.dropwizard.health.response.HealthResponderFactory"
+    },
+    {
+      "glob": "META-INF/services/io.dropwizard.health.response.HealthResponseProviderFactory"
+    },
+    {
+      "glob": "META-INF/services/io.dropwizard.jackson.Discoverable"
+    },
+    {
+      "glob": "META-INF/services/io.dropwizard.jetty.ConnectorFactory"
+    },
+    {
+      "glob": "META-INF/services/io.dropwizard.logging.common.AppenderFactory"
+    },
+    {
+      "glob": "META-INF/services/io.dropwizard.logging.common.LoggingFactory"
+    },
+    {
+      "glob": "META-INF/services/io.dropwizard.logging.common.filter.FilterFactory"
+    },
+    {
+      "glob": "META-INF/services/io.dropwizard.logging.common.layout.DiscoverableLayoutFactory"
+    },
+    {
+      "glob": "META-INF/services/io.dropwizard.metrics.common.ReporterFactory"
+    },
+    {
+      "glob": "META-INF/services/io.dropwizard.request.logging.RequestLogFactory"
+    },
+    {
+      "glob": "META-INF/services/jakarta.el.ExpressionFactory"
+    },
+    {
+      "glob": "META-INF/services/jakarta.validation.ConstraintValidator"
+    },
+    {
+      "glob": "META-INF/services/jakarta.validation.valueextraction.ValueExtractor"
+    },
+    {
+      "glob": "META-INF/services/jakarta.ws.rs.container.DynamicFeature"
+    },
+    {
+      "glob": "META-INF/services/jakarta.ws.rs.core.Feature"
+    },
+    {
+      "glob": "META-INF/services/jakarta.ws.rs.ext.ExceptionMapper"
+    },
+    {
+      "glob": "META-INF/services/jakarta.ws.rs.ext.MessageBodyReader"
+    },
+    {
+      "glob": "META-INF/services/jakarta.ws.rs.ext.MessageBodyWriter"
+    },
+    {
+      "glob": "META-INF/services/jakarta.ws.rs.ext.RuntimeDelegate"
+    },
+    {
+      "glob": "META-INF/services/java.nio.channels.spi.SelectorProvider"
+    },
+    {
+      "glob": "META-INF/services/java.time.zone.ZoneRulesProvider"
+    },
+    {
+      "glob": "META-INF/services/java.util.spi.ResourceBundleControlProvider"
+    },
+    {
+      "glob": "META-INF/services/org.eclipse.jetty.http.HttpFieldPreEncoder"
+    },
+    {
+      "glob": "META-INF/services/org.glassfish.hk2.extension.ServiceLocatorGenerator"
+    },
+    {
+      "glob": "META-INF/services/org.glassfish.jersey.innate.inject.spi.ExternalRegistrables"
+    },
+    {
+      "glob": "META-INF/services/org.glassfish.jersey.internal.inject.InjectionManagerFactory"
+    },
+    {
+      "glob": "META-INF/services/org.glassfish.jersey.internal.spi.AutoDiscoverable"
+    },
+    {
+      "glob": "META-INF/services/org.glassfish.jersey.internal.spi.ForcedAutoDiscoverable"
+    },
+    {
+      "glob": "META-INF/services/org.glassfish.jersey.model.internal.spi.ParameterServiceProvider"
+    },
+    {
+      "glob": "META-INF/services/org.glassfish.jersey.server.spi.ComponentProvider"
+    },
+    {
+      "glob": "META-INF/services/org.glassfish.jersey.server.spi.ContainerProvider"
+    },
+    {
+      "glob": "META-INF/services/org.glassfish.jersey.server.spi.ExternalRequestScope"
+    },
+    {
+      "glob": "META-INF/services/org.glassfish.jersey.servlet.internal.spi.ServletContainerProvider"
+    },
+    {
+      "glob": "META-INF/services/org.glassfish.jersey.servlet.spi.AsyncContextDelegateProvider"
+    },
+    {
+      "glob": "META-INF/services/org.glassfish.jersey.servlet.spi.FilterUrlMappingsProvider"
+    },
+    {
+      "glob": "META-INF/services/org.glassfish.jersey.spi.ExternalConfigurationProvider"
+    },
+    {
+      "glob": "META-INF/services/org.glassfish.jersey.spi.HeaderDelegateProvider"
+    },
+    {
+      "glob": "META-INF/services/org.jboss.logging.LoggerProvider"
+    },
+    {
+      "glob": "META-INF/services/org.slf4j.spi.SLF4JServiceProvider"
+    },
+    {
+      "glob": "META-INF/validation.xml"
+    },
+    {
+      "glob": "banner.txt"
+    },
+    {
+      "glob": "ch/qos/logback/access/common/logback-access-common-dependencies.properties"
+    },
+    {
+      "glob": "ch/qos/logback/access/common/logback-access-common-version.properties"
+    },
+    {
+      "glob": "ch/qos/logback/access/jetty/logback-access-jetty12-version.properties"
+    },
+    {
+      "glob": "ch/qos/logback/classic/logback-classic-version.properties"
+    },
+    {
+      "glob": "ch/qos/logback/core/logback-core-version.properties"
+    },
+    {
+      "glob": "jakarta/servlet/LocalStrings.properties"
+    },
+    {
+      "glob": "jakarta/servlet/LocalStrings_en.properties"
+    },
+    {
+      "glob": "jakarta/servlet/LocalStrings_en_IN.properties"
+    },
+    {
+      "glob": "jakarta/servlet/http/LocalStrings.properties"
+    },
+    {
+      "glob": "jakarta/servlet/http/LocalStrings_en.properties"
+    },
+    {
+      "glob": "jakarta/servlet/http/LocalStrings_en_IN.properties"
+    },
+    {
+      "glob": "logback-test.xml"
+    },
+    {
+      "glob": "logback.xml"
+    },
+    {
+      "glob": "net/sourceforge/argparse4j/internal/ArgumentParserImpl.properties"
+    },
+    {
+      "glob": "net/sourceforge/argparse4j/internal/ArgumentParserImpl_en.properties"
+    },
+    {
+      "glob": "net/sourceforge/argparse4j/internal/ArgumentParserImpl_en_IN.properties"
+    },
+    {
+      "glob": "org/eclipse/jetty/http/encoding.properties"
+    },
+    {
+      "glob": "org/eclipse/jetty/http/mime.properties"
+    },
+    {
+      "glob": "org/eclipse/jetty/version/build.properties"
+    },
+    {
+      "glob": "org/glassfish/jersey/internal/build.properties"
+    },
+    {
+      "glob": "org/glassfish/jersey/internal/localization.properties"
+    },
+    {
+      "glob": "org/glassfish/jersey/internal/localization_en.properties"
+    },
+    {
+      "glob": "org/glassfish/jersey/internal/localization_en_IN.properties"
+    },
+    {
+      "glob": "org/glassfish/jersey/server/internal/localization.properties"
+    },
+    {
+      "glob": "org/glassfish/jersey/server/internal/localization_en.properties"
+    },
+    {
+      "glob": "org/glassfish/jersey/server/internal/localization_en_IN.properties"
+    },
+    {
+      "module": "jdk.jfr",
+      "glob": "jdk/jfr/internal/query/view.ini"
+    },
+    {
+      "bundle": "jakarta.servlet.LocalStrings"
+    },
+    {
+      "bundle": "jakarta.servlet.http.LocalStrings"
+    },
+    {
+      "bundle": "net.sourceforge.argparse4j.internal.ArgumentParserImpl"
+    },
+    {
+      "bundle": "org.glassfish.jersey.internal.localization"
+    },
+    {
+      "bundle": "org.glassfish.jersey.server.internal.localization"
+    }
+  ]
+}

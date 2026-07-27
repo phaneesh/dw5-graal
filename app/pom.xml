@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.example</groupId>
+        <artifactId>dw5-graal-parent</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>app</artifactId>
+    <packaging>jar</packaging>
+
+    <name>dw5-graal app</name>
+    <description>Minimal Dropwizard 5 ping application</description>
+
+    <dependencies>
+        <dependency>
+            <groupId>io.dropwizard</groupId>
+            <artifactId>dropwizard-core</artifactId>
+        </dependency>
+        <!-- Async persistent queue: /ping response is enqueued for async downstream processing. -->
+        <dependency>
+            <groupId>org.clojars.nitishgoyal13</groupId>
+            <artifactId>bigqueue</artifactId>
+            <version>0.7.8</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <finalName>dw5-graal-app</finalName>
+        <plugins>
+            <!-- Fat jar: merge Jersey/HK2 service descriptors, set main class -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-shade-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>shade</goal>
+                        </goals>
+                        <configuration>
+                            <createDependencyReducedPom>false</createDependencyReducedPom>
+                            <shadedArtifactAttached>false</shadedArtifactAttached>
+                            <transformers>
+                                <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                                    <mainClass>com.example.ping.PingApplication</mainClass>
+                                </transformer>
+                                <!-- Merge META-INF/services for Jersey/HK2 SPI -->
+                                <transformer implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>
+                            </transformers>
+                            <filters>
+                                <filter>
+                                    <artifact>*:*</artifact>
+                                    <excludes>
+                                        <exclude>META-INF/*.SF</exclude>
+                                        <exclude>META-INF/*.DSA</exclude>
+                                        <exclude>META-INF/*.RSA</exclude>
+                                    </excludes>
+                                </filter>
+                            </filters>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>false</filtering>
+            </resource>
+        </resources>
+    </build>
+
+    <profiles>
+        <!--
+            Phase 3: GraalVM native image.
+            Activate with: mvn -Pnative -pl app package
+            native-maven-plugin 0.10.6 (NOT 1.0.0 — breaking metadata format change).
+            Dropwizard has no first-party GraalVM support, so reachability metadata under
+            src/main/resources/META-INF/native-image/ is carried manually (Phase 3, 03-02).
+            buildArgs are one-per-element; never shell-concatenated.
+        -->
+        <!--
+            Phase 3: GraalVM native image.
+            Activate with: mvn -Pnative -pl app package
+            native-maven-plugin 0.10.6 (NOT 1.0.0 — breaking metadata format change).
+            Dropwizard has no first-party GraalVM support, so reachability metadata under
+            src/main/resources/META-INF/native-image/ is carried manually (Phase 3, 03-02).
+            buildArgs are one-per-element; never shell-concatenated.
+        -->
+        <profile>
+            <id>native</id>
+
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.graalvm.buildtools</groupId>
+                        <artifactId>native-maven-plugin</artifactId>
+                        <version>${native.maven.plugin.version}</version>
+                        <extensions>true</extensions>
+
+                        <configuration>
+                            <imageName>dw5-graal-app</imageName>
+                            <classpath>
+                                <param>${project.build.directory}/${project.build.finalName}.jar</param>
+                            </classpath>
+
+                            <buildArgs>
+                                <!-- Heap cap. -->
+                                <buildArg>-R:MaxHeapSize=${native.heap.size}</buildArg>
+                                <!-- Peak optimization. -->
+                                <buildArg>-O3</buildArg>
+                                <buildArg>-march=native</buildArg>
+                                <!--
+                                    GC: Phase 5 switches to G1 for throughput. Serial GC stop-the-world
+                                    pauses hurt p99 and throughput under sustained load.
+                                -->
+                                <buildArg>--gc=G1</buildArg>
+
+                                <!-- Main entry point. -->
+                                <buildArg>-H:Class=com.example.ping.PingApplication</buildArg>
+
+                                <buildArg>--verbose</buildArg>
+                                <buildArg>-H:+ReportExceptionStackTraces</buildArg>
+
+                                <buildArg>-H:IncludeResources=application.yml</buildArg>
+                            </buildArgs>
+                        </configuration>
+
+                        <executions>
+                            <execution>
+                                <id>build-native</id>
+                                <goals>
+                                    <goal>compile-no-fork</goal>
+                                </goals>
+                                <phase>package</phase>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+
+        <!--
+            Phase 5: PGO build (profile-guided optimization).
+            Two-step: build instrumented binary, run workload, rebuild with profile.
+            Step 1: mvn -Pnative-pgo-instrument -pl app package
+                    → produces dw5-graal-app.pgo-instrumented
+                    run it against workload → writes default.iprof
+            Step 2: mvn -Pnative-pgo -pl app package
+                    rebuilds using the collected profile
+        -->
+        <profile>
+            <id>native-pgo-instrument</id>
+
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.graalvm.buildtools</groupId>
+                        <artifactId>native-maven-plugin</artifactId>
+                        <version>${native.maven.plugin.version}</version>
+                        <extensions>true</extensions>
+
+                        <configuration>
+                            <imageName>dw5-graal-app.pgo-instrumented</imageName>
+                            <classpath>
+                                <param>${project.build.directory}/${project.build.finalName}.jar</param>
+                            </classpath>
+
+                            <buildArgs>
+                                <buildArg>-R:MaxHeapSize=${native.heap.size}</buildArg>
+                                <buildArg>-O3</buildArg>
+                                <buildArg>-march=native</buildArg>
+                                <buildArg>--gc=G1</buildArg>
+                                <!-- Instrument for PGO: collects profile into default.iprof at runtime. -->
+                                <buildArg>--pgo-instrument</buildArg>
+                                <buildArg>-H:Class=com.example.ping.PingApplication</buildArg>
+                                <buildArg>-H:+ReportExceptionStackTraces</buildArg>
+                                <buildArg>-H:IncludeResources=application.yml</buildArg>
+                            </buildArgs>
+                        </configuration>
+
+                        <executions>
+                            <execution>
+                                <id>build-native-pgo-instrument</id>
+                                <goals>
+                                    <goal>compile-no-fork</goal>
+                                </goals>
+                                <phase>package</phase>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+
+        <!--
+            Phase 5: PGO-optimized build (consumes the profile from the instrumented run).
+            Requires default.iprof in the current directory (or use -Dpgo.file=PATH).
+        -->
+        <profile>
+            <id>native-pgo</id>
+
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.graalvm.buildtools</groupId>
+                        <artifactId>native-maven-plugin</artifactId>
+                        <version>${native.maven.plugin.version}</version>
+                        <extensions>true</extensions>
+
+                        <configuration>
+                            <imageName>dw5-graal-app</imageName>
+                            <classpath>
+                                <param>${project.build.directory}/${project.build.finalName}.jar</param>
+                            </classpath>
+
+                            <buildArgs>
+                                <buildArg>-R:MaxHeapSize=${native.heap.size}</buildArg>
+                                <buildArg>-O3</buildArg>
+                                <buildArg>-march=native</buildArg>
+                                <buildArg>--gc=G1</buildArg>
+                                <!-- Consume the profile collected by the instrumented run. -->
+                                <buildArg>--pgo=${pgo.file}</buildArg>
+                                <buildArg>-H:Class=com.example.ping.PingApplication</buildArg>
+                                <buildArg>-H:+ReportExceptionStackTraces</buildArg>
+                                <buildArg>-H:IncludeResources=application.yml</buildArg>
+                            </buildArgs>
+                        </configuration>
+
+                        <executions>
+                            <execution>
+                                <id>build-native-pgo</id>
+                                <goals>
+                                    <goal>compile-no-fork</goal>
+                                </goals>
+                                <phase>package</phase>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+</project>

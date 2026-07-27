@@ -1,0 +1,54 @@
+# dw5-graal application config
+# Phase 7: 8-core dedicated re-tune (app pinned to cores 0-7 via taskset).
+# Carriers re-sized for 8 dedicated cores (16→8, 8→4). PGO re-collected under pinning.
+# See .planning/phases/07-8-core-dedicated-re-tune-plus-advanced-jvm-optimizations.../
+
+server:
+  type: custom
+  # Virtual threads on for both app and admin pools.
+  enableVirtualThreads: true
+  enableAdminVirtualThreads: true
+
+  # Carrier thread pool (platform threads that run VTs).
+  # 8-core dedicated tuning (Phase 7): app pinned to cores 0-7.
+  # Carriers capped at 8 to match physical cores; with 1 acceptor + 2 selectors
+  # = 3 native threads, leaving 5 cores for VT scheduling.
+  # maxThreads/minThreads here = carrier bounds; VT cap is set separately via virtualThreadsMax.
+  maxThreads: 8
+  minThreads: 4
+  adminMaxThreads: 8
+  adminMinThreads: 2
+  # VT concurrency cap for the app pool (decoupled from carrier maxThreads by TunedServerFactory).
+  virtualThreadsMax: 10000
+
+  idleThreadTimeout: 10 seconds
+
+  applicationConnectors:
+    - type: http
+      port: 8080
+      acceptorThreads: 1
+      selectorThreads: 2
+      acceptQueueSize: 2048
+      outputBufferSize: 32KiB
+
+  adminConnectors:
+    - type: http
+      port: 8081
+      acceptorThreads: 1
+      selectorThreads: 1
+      acceptQueueSize: 64
+      outputBufferSize: 32KiB
+
+  gzip:
+    enabled: false
+
+  # Disable request/access logging — every request otherwise writes a log line,
+  # which is a major per-request CPU + I/O cost. Critical for throughput benchmarks.
+  # Uses NoopRequestLogFactory (returns null) to skip attaching a request log entirely.
+  requestLog:
+    type: noop
+
+logging:
+  level: WARN
+  appenders:
+    - type: console

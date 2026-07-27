@@ -1,0 +1,3 @@
+io.dropwizard.core.server.DefaultServerFactory
+io.dropwizard.core.server.SimpleServerFactory
+com.example.ping.TunedServerFactory
